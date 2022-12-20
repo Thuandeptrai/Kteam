@@ -44,10 +44,7 @@ for span3 in totalView:
     viewList.append(span3.get_attribute("innerHTML"))
 finalData= []
 finalData.append([imgList, Title1, author, viewList])
-print(len(imgList))
-print(len(Title1))
-print(len(author))
-print(len(viewList))
+
 d ={'ImgSrc':imgList, "Title":Title1, "Author": author, "View": viewList}
 df1 = pd.DataFrame(data=d)
 df1.to_excel("output.xlsx")
